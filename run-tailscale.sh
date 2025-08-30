@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Inicia o daemon do tailscale em segundo plano
-/render/tailscaled &
+# Inicia o daemon em MODO USERSPACE (a correção final!)
+/render/tailscaled --tun=userspace-networking --socks5-server=localhost:1055 &
 
 # Aguarda 5 segundos para garantir que o daemon iniciou
 sleep 5
