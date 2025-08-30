@@ -11,7 +11,8 @@ sleep 5
 /render/tailscale up \
     --authkey="${TAILSCALE_AUTHKEY}" \
     --advertise-routes="${PRIVATE_NETWORK_CIDR}" \
-    --accept-dns=false
+    --accept-dns=false \
+    --reset
 
 # Comando para manter o script e o container rodando indefinidamente
 wait
