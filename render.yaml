@@ -8,7 +8,7 @@ services:
       - key: TAILSCALE_AUTHKEY
         sync: false
       - key: TAILSCALE_VERSION
-        value: 1.86.2
+        value: 1.88.1
       - key: ADVERTISE_ROUTES
         value: 10.0.0.0/8
     disk:
